@@ -5,17 +5,34 @@ var casado = false; // true
 var casa = undefined;
 
 
+var usuario = {
+    "nombre": "Adrian",
+    apellido: "Eguez",
+    cedula: '1718137159',
+    imprimirEnConsola: function () {
+        console.log(this.nombre + ' ' + this.apellido + ' ' + this.cedula)
+    }
+};
 
 
+function sumarDosNumeros(numeroUno, numeroDos) {
+    return numeroUno + numeroDos;
+}
+
+var sumarDosNumerosVersionDos = function (numeroUno, numeroDos) {
+    return numeroUno + numeroDos;
+};
 
 
+console.log(sumarDosNumeros(1, 2));
 
 
+console.log("Usuario: ", usuario);
 
 
 var arreglo = []
 console.log(casa ? "Verdadero" : "Falso");
-if(casa){
+if (casa) {
     console.log("Verdadero");
 } else {
     console.log("Falso");
