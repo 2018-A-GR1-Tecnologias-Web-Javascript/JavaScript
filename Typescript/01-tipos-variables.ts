@@ -34,14 +34,65 @@ class Usuario {
 
 }
 
+}
+
 let usuario: Usuario = new Usuario('Adrian', 28, '1718137159');
 
-console.log(usuario);
+let usuarioOtro = {
+    mNombre: 'Adrian',
+    mEdad: 28,
+    mCedula: '1718137159'
+};
+
+<<<<<<< HEAD
+interface Usuario2 {
+    mNombre:String;
+    mEdad: Number;
+    mCedula: String;
+
+}
+
+class UsuarioTres{
+
+    //en vez de definir en el constructor cualquier cosa se puede decir lo que llega igualar a alguna cosa
+
+    constructor(public mNombre: String,
+                private mEdad:Number,
+                protected mcedula : String){
 
 
+    }
+}
 
 
+=======
+console.log(usuario.imprimirEnConsola());
+console.log(usuarioOtro);
+>>>>>>> ab334725cd82c434a7cf8872a2bf83059f0143ec
 
+function noHagoNada() {
+}
+
+console.log('No hago nada: ', noHagoNada());
+
+let usuarioTres: Usuario;
+
+interface UsuarioDos {
+    mNombre: String;
+    mEdad: Number;
+    mCedula: String;
+
+    imprimirEnConsola(nombre: String): void;
+
+    usuario: Usuario;
+}
+
+class UsuarioTres {
+    constructor(public mNombre: String,
+                private mEdad: Number,
+                protected mCedula: String) {
+    }
+}
 
 
 

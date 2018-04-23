@@ -24,4 +24,22 @@ var Usuario = /** @class */ (function () {
     return Usuario;
 }());
 var usuario = new Usuario('Adrian', 28, '1718137159');
-console.log(usuario);
+var usuarioOtro = {
+    mNombre: 'Adrian',
+    mEdad: 28,
+    mCedula: '1718137159'
+};
+console.log(usuario.imprimirEnConsola());
+console.log(usuarioOtro);
+function noHagoNada() {
+}
+console.log('No hago nada: ', noHagoNada());
+var usuarioTres;
+var UsuarioTres = /** @class */ (function () {
+    function UsuarioTres(mNombre, mEdad, mCedula) {
+        this.mNombre = mNombre;
+        this.mEdad = mEdad;
+        this.mCedula = mCedula;
+    }
+    return UsuarioTres;
+}());
