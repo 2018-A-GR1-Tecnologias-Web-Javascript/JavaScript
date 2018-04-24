@@ -1,5 +1,29 @@
 let arregloNumeros = [1, 2, 3, 4, 5];
 
+// let arregloUsuarios: Array<UsuarioArreglo> =[
+let arregloUsuarios: UsuarioArreglo[] = [
+    {
+        nombre: 'Adrian',
+        edad: 28
+    },
+    {
+        nombre: 'Vicente',
+        edad: 10
+    },
+    {
+        nombre: 'Wendy',
+        edad: 70
+    },
+    {
+        nombre: 'Carolina',
+        edad: 32
+    },
+    {
+        nombre: 'Raul',
+        edad: 25
+    },
+];
+
 let sumarDosNumeros = (numeroUno: number, numeroDos: number) => { //fat arrow funct}
     return numeroUno + numeroDos;
 };
@@ -34,12 +58,33 @@ let resultadoDeLaSuma = arregloNumeros
     );
 
 let resultadoDeLaSumaDos = arregloNumeros
-    .reduce((totalAcumulado, valorArreglo) => totalAcumulado - valorArreglo, 20);
+    .reduce(
+        (totalAcumulado, valorArreglo) => {
+            return totalAcumulado - valorArreglo;
+        },
+        20
+    );
 console.log('resultadoDeLaSuma', resultadoDeLaSuma);
 
 
 
 
+
+
+let resultadoDeLasEdades = arregloUsuarios
+    .reduce(
+        (totalEdadAcumulado, usuarioArreglo: UsuarioArreglo) => {
+            return totalEdadAcumulado + usuarioArreglo.edad;
+        },
+        0
+    );
+console.log('resultadoDeLasEdades', resultadoDeLasEdades);
+
+
+interface UsuarioArreglo {
+    nombre: string;
+    edad: number;
+}
 
 
 

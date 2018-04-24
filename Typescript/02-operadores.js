@@ -1,4 +1,27 @@
 var arregloNumeros = [1, 2, 3, 4, 5];
+// let arregloUsuarios: Array<UsuarioArreglo> =[
+var arregloUsuarios = [
+    {
+        nombre: 'Adrian',
+        edad: 28
+    },
+    {
+        nombre: 'Vicente',
+        edad: 10
+    },
+    {
+        nombre: 'Wendy',
+        edad: 70
+    },
+    {
+        nombre: 'Carolina',
+        edad: 32
+    },
+    {
+        nombre: 'Raul',
+        edad: 25
+    },
+];
 var sumarDosNumeros = function (numeroUno, numeroDos) {
     return numeroUno + numeroDos;
 };
@@ -21,5 +44,12 @@ var resultadoDeLaSuma = arregloNumeros
     return totalAcumulado - valorArreglo;
 }, 20);
 var resultadoDeLaSumaDos = arregloNumeros
-    .reduce(function (totalAcumulado, valorArreglo) { return totalAcumulado - valorArreglo; }, 20);
+    .reduce(function (totalAcumulado, valorArreglo) {
+    return totalAcumulado - valorArreglo;
+}, 20);
 console.log('resultadoDeLaSuma', resultadoDeLaSuma);
+var resultadoDeLasEdades = arregloUsuarios
+    .reduce(function (totalEdadAcumulado, usuarioArreglo) {
+    return totalEdadAcumulado + usuarioArreglo.edad;
+}, 0);
+console.log('resultadoDeLasEdades', resultadoDeLasEdades);
