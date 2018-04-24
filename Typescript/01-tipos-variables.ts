@@ -44,7 +44,6 @@ let usuarioOtro = {
     mCedula: '1718137159'
 };
 
-<<<<<<< HEAD
 interface Usuario2 {
     mNombre:String;
     mEdad: Number;
@@ -65,10 +64,29 @@ class UsuarioTres{
 }
 
 
-=======
 console.log(usuario.imprimirEnConsola());
 console.log(usuarioOtro);
->>>>>>> ab334725cd82c434a7cf8872a2bf83059f0143ec
+
+function noHagoNada() {
+}
+
+console.log('No hago nada: ', noHagoNada());
+
+let usuarioTres: Usuario;
+
+interface UsuarioDos {
+    mNombre: String;
+    mEdad: Number;
+    mCedula: String;
+
+    imprimirEnConsola(nombre: String): void;
+
+    usuario: Usuario;
+}
+
+
+console.log(usuario.imprimirEnConsola());
+console.log(usuarioOtro);
 
 function noHagoNada() {
 }
@@ -93,19 +111,3 @@ class UsuarioTres {
                 protected mCedula: String) {
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
