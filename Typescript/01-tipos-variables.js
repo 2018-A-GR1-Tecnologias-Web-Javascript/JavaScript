@@ -23,7 +23,7 @@ var Usuario = /** @class */ (function () {
     };
     return Usuario;
 }());
-var usuario = new Usuario('Adrian', 28, '1718137159');
+var usuario = new Usuario('Adrian', 28);
 var usuarioOtro = {
     mNombre: 'Adrian',
     mEdad: 28,

@@ -16,11 +16,11 @@ let casado: boolean = false;
 class Usuario {
     public mNombre: String;
     private mEdad: Number;
-    protected mCedula: String;
+    protected mCedula?: String;
 
     constructor(nombre: String,
                 edad: Number,
-                cedula: String,
+                cedula?: String,
     ) {
         this.mNombre = nombre;
         this.mEdad = edad;
@@ -34,7 +34,7 @@ class Usuario {
 
 }
 
-let usuario: Usuario = new Usuario('Adrian', 28, '1718137159');
+let usuario: Usuario = new Usuario('Adrian', 28);
 
 let usuarioOtro = {
     mNombre: 'Adrian',
@@ -65,9 +65,15 @@ interface UsuarioDos {
 class UsuarioTres {
     constructor(public mNombre: String,
                 private mEdad: Number,
-                protected mCedula: String) {
+                protected mCedula?: String) {
     }
 }
+
+
+
+
+
+
 
 
 

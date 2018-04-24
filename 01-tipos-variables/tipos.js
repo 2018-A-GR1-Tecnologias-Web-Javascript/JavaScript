@@ -60,7 +60,6 @@ if (nombre !== edad) {
 
 var arregloDeNumeros = [
     1,
-    '2',
     false,
     null,
     undefined,
