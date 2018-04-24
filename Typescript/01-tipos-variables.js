@@ -23,12 +23,21 @@ var Usuario = /** @class */ (function () {
     };
     return Usuario;
 }());
-var usuario = new Usuario('Adrian', 28);
+var usuario = new Usuario('Adrian', 28, '1718137159');
 var usuarioOtro = {
     mNombre: 'Adrian',
     mEdad: 28,
     mCedula: '1718137159'
 };
+var UsuarioTres = /** @class */ (function () {
+    //en vez de definir en el constructor cualquier cosa se puede decir lo que llega igualar a alguna cosa
+    function UsuarioTres(mNombre, mEdad, mcedula) {
+        this.mNombre = mNombre;
+        this.mEdad = mEdad;
+        this.mcedula = mcedula;
+    }
+    return UsuarioTres;
+}());
 console.log(usuario.imprimirEnConsola());
 console.log(usuarioOtro);
 function noHagoNada() {
@@ -43,3 +52,9 @@ var UsuarioTres = /** @class */ (function () {
     }
     return UsuarioTres;
 }());
+console.log(usuario.imprimirEnConsola());
+console.log(usuarioOtro);
+function noHagoNada() {
+}
+console.log('No hago nada: ', noHagoNada());
+var usuarioTres;

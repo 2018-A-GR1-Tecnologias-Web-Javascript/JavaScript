@@ -34,13 +34,33 @@ class Usuario {
 
 }
 
-let usuario: Usuario = new Usuario('Adrian', 28);
+let usuario: Usuario = new Usuario('Adrian', 28, '1718137159');
 
 let usuarioOtro = {
     mNombre: 'Adrian',
     mEdad: 28,
     mCedula: '1718137159'
 };
+
+interface Usuario2 {
+    mNombre:String;
+    mEdad: Number;
+    mCedula: String;
+
+}
+
+class UsuarioTres{
+
+    //en vez de definir en el constructor cualquier cosa se puede decir lo que llega igualar a alguna cosa
+
+    constructor(public mNombre: String,
+                private mEdad:Number,
+                protected mcedula : String){
+
+
+    }
+}
+
 
 console.log(usuario.imprimirEnConsola());
 console.log(usuarioOtro);
@@ -62,6 +82,7 @@ interface UsuarioDos {
     usuario: Usuario;
 }
 
+<<<<<<< HEAD
 class UsuarioTres {
     constructor(public mNombre: String,
                 private mEdad: Number,
@@ -76,17 +97,41 @@ class UsuarioTres {
 
 
 
+=======
+>>>>>>> e3dce300169f6d5a74987fd99bb6fa809abf8828
+
+console.log(usuario.imprimirEnConsola());
+console.log(usuarioOtro);
+
+function noHagoNada() {
+}
+
+console.log('No hago nada: ', noHagoNada());
+
+let usuarioTres: Usuario;
+
+interface UsuarioDos {
+    mNombre: String;
+    mEdad: Number;
+    mCedula: String;
+
+    imprimirEnConsola(nombre: String): void;
+
+    usuario: Usuario;
+}
+
+<<<<<<< HEAD
 
 
 
 
 
 
-
-
-
-
-
-
-
-
+=======
+class UsuarioTres {
+    constructor(public mNombre: String,
+                private mEdad: Number,
+                protected mCedula: String) {
+    }
+}
+>>>>>>> e3dce300169f6d5a74987fd99bb6fa809abf8828

@@ -1,0 +1,75 @@
+let segundoNombre = 'Diego';
+const cedula = '1718917717';
+segundoNombre = 'Xavier';
+
+const URL, POLI = 'http://www.epn.edu.ec';
+//segundoNombre = 123;
+
+let nombre: String;
+let edad: Number = 28;
+let fecha: Date = new Date();
+let casado: boolean = false;
+
+//let mascotas:object = ();
+
+class Usuario {
+    public mNombre: String;
+    private mEdad: Number;
+    protected mCedula: String;
+
+    constructor(nombre: String,
+                edad: Number,
+                cedula: String) {
+        this.mNombre = nombre;
+        this.mEdad = edad;
+        this.mCedula = cedula;
+    }
+
+    public imprimirEnConsola() {
+        console.log('El usuario se llama');
+    }
+}
+
+let usuario: Usuario = new Usuario(
+    'Diego',
+    34,
+    '1718917717'
+);
+
+let usuarioOtro: = (
+    mNombre: 'Diego',
+    mEdad: 34,
+    mCedula: '1718917717'
+);
+
+usuario.imprimirEnConsola();
+usuarioOtro.imprimirEnConsola();
+
+
+interface UsuarioDos {
+    mNombre : String;
+    mEdad : Number;
+    mCedula : String;
+    imprimirEnConsola(nombre:String):void;
+    usuario: Usuario
+}
+
+let usuarioCuatro: UsuarioDos;
+usuarioCuatro = {
+    usuarioCuatro =
+}
+
+class UsuarioTres {
+
+    constructor(public mNombre: String,
+    private mEdad: Number,
+        protected mCedula: String) {
+        this.mNombre = nombre;
+        this.mEdad = edad;
+        this.mCedula = cedula;
+    }
+
+    public imprimirEnConsola() {
+        console.log('El usuario se llama');
+    }
+}
