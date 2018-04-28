@@ -63,6 +63,15 @@ var usuariosConCincoAniosMenos = arregloUsuarios
     .filter(function (usuario) {
     // true se devuelve, false no se devuelve
     return (usuario.deuda < 100);
+})
+    // .every( // AND
+    //     (usuario: UsuarioArreglo) => {
+    //         return (usuario.edad >= 18);
+    //     }
+    // )
+    .some(// OR
+function (usuario) {
+    return (usuario.edad <= 18);
 });
 console.log('usuariosConCincoAniosMenos', usuariosConCincoAniosMenos);
 var resultadoDeLasEdades = arregloUsuarios

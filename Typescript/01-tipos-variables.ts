@@ -33,7 +33,6 @@ class Usuario {
     }
 
 }
-
 let usuario: Usuario = new Usuario('Adrian', 28, '1718137159');
 
 let usuarioOtro = {
